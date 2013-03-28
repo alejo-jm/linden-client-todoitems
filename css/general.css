@@ -1,0 +1,140 @@
+* {
+	margin:0px;
+	padding:0px;
+	outline:0;
+	border:none;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:1em;
+	color:#000;
+	background: #e6e6e6;
+}
+
+.panel {
+	position: absolute;
+	width: 60%;
+	height: 200px;
+	left: 50%;
+	top:50%;
+	margin-left: -30%;
+	margin-top: -150px;
+	padding-top: 5%;
+	background: #CCC;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7f7f7f), to(#cccccc));
+	background-image: -webkit-linear-gradient(#7f7f7f, #cccccc);
+	background-image: -moz-linear-gradient(#7f7f7f, #cccccc);
+	background-image: -o-linear-gradient(#7f7f7f, #cccccc);
+	background-image: linear-gradient(#7f7f7f, #cccccc);
+}
+
+
+::-webkit-validation-bubble-message {
+    padding: 1em;
+}
+
+.input {
+	width: 80%;
+	height: 30px;
+	margin: 1% 1% 1% 10%;
+	border-radius: 4px;
+	padding-left: 5px;
+}
+
+.loginForm input[type="submit"]{
+	width: 20%;
+	background: #F0F0F0;
+	padding-left: 0px;
+}
+
+input:required:valid{
+	background: #fff url(/img/valid.gif) no-repeat 98% center;
+	border-color: #28BA1A;
+	box-shadow: 0 0 5px #28BA1A;
+}
+
+input:required:invalid {
+
+}
+
+input:focus:invalid {
+	background: #fff url(/img/invalid.png) no-repeat 98% center;
+}
+
+
+
+
+
+
+
+
+
+
+/* :::::::::::::::::::::::::::::::: [ shortcuts ] [add this add the bottom off your css ]:::::::::::::::::::::::::::: */
+/* texts */
+.text-left		{text-align: left!important;}
+.text-right		{text-align: right!important;}
+.text-center	{text-align: center!important;}
+.text-justify	{text-align: justify!important;}
+.text-top		{vertical-align:text-top!important;}
+.text-middle	{vertical-align:text-middle!important;}
+.text-bottom	{vertical-align:text-bottom!important;}
+.text-none		{text-decoration: none!important;}
+.underline		{text-decoration: underline!important;}
+/* colors */
+.white {color:#FFFFFF!important;}
+.black {color:#000000!important;}
+/* text transform */
+.upper 	{text-transform: uppercase!important;}
+.lower 	{text-transform: lowercase!important;}
+.capita {text-transform: capitalize!important;}
+.strike {text-decoration: line-through!important;}
+/* fonts */
+.italic {font-style:italic!important;}
+.normal {font-style:normal !important;}
+.bold	{font-weight: bold!important;}
+.line-small {line-height:12px!important;}
+/* font-sizes */
+.font-giant {font-size:16px!important;}
+.font-big	{font-size:14px!important;}
+.font-normal{font-size:12px!important;}
+.font-small {font-size:10px!important;}
+.font-tiny {font-size:8px!important;}
+/* divs */
+.left	{float:left!important;}
+.right  {float:right!important;}
+.clear  {clear:both!important;}
+.hide	{display:none!important;}
+.inline {display:inline!important;}
+.block  {display:block!important;}
+.center {margin-left:auto;margin-right:auto!important;}
+.absolute {position:absolute!important;}
+.relative {position:relative!important;}
+.invisible {visibility:hidden!important;}
+/* mouse */
+.pointer {cursor:pointer;}
+/* verticals */
+.vertical-bottom	{vertical-align:bottom!important;}
+.vertical-top		{vertical-align:top!important;}
+.vertical-middle	{vertical-align:middle!important;}
+/* position background */
+.bg-top-left		{background-position:top left!important;}
+.bg-top-center		{background-position:top center!important;}
+.bg-top-right		{background-position:top right!important;}
+.bg-center-left		{background-position:center left!important;}
+.bg-center-center	{background-position:center center!important;}
+.bg-center-right	{background-position:center right!important;}
+.bg-bottom-left		{background-position:bottom left!important;}
+.bg-bottom-center	{background-position:bottom center!important;}
+.bg-bottom-right	{background-position:bottom right!important;}
+.bg-no-repeat		{background-repeat: no-repeat!important;}
+/* ul and li */
+.list-none		{list-style-type: none!important;}
+.list-inside	{list-style-position:inside!important;}
+.list-outside	{list-style-position:outside!important;}
+/* reset */
+.reset-padding {padding:0px!important;}
+.reset-margin  {margin:0px!important;}
+.reset-text    {font-style: normal!important;font-size:12px!important;font-weight:normal!important;text-decoration: none!important;}
+.decoration-none {text-decoration: none;}
