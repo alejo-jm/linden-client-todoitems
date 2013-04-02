@@ -5,10 +5,10 @@
   RewriteCond %{REQUEST_URI} [a-z-\-]*/(service)/(.+)
   
   #development
-  RewriteRule (service)/(.+) http://tasks-server.local/$2 [P,QSA]	
+  #RewriteRule (service)/(.+) http://tasks-server.local/$2 [P,QSA]	
   
   #production
-  #RewriteRule (service)/(.+) http://servertasks.alejojm.net/$2 [P,QSA]
+  RewriteRule (service)/(.+) http://servertasks.alejojm.net/$2 [P,QSA]
   
 
 </IfModule>
