@@ -7,29 +7,14 @@
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size:1em;
+	font-size: 0.9em;
 	color:#000;
 	background: #e6e6e6;
 }
 
-.panel {
-	position: absolute;
-	width: 60%;
-	height: 200px;
-	left: 50%;
-	top:50%;
-	margin-left: -30%;
-	margin-top: -150px;
-	padding-top: 5%;
-	background: #CCC;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7f7f7f), to(#cccccc));
-	background-image: -webkit-linear-gradient(#7f7f7f, #cccccc);
-	background-image: -moz-linear-gradient(#7f7f7f, #cccccc);
-	background-image: -o-linear-gradient(#7f7f7f, #cccccc);
-	background-image: linear-gradient(#7f7f7f, #cccccc);
-}
-
-
+/** 
+	Forms
+**/
 ::-webkit-validation-bubble-message {
     padding: 1em;
 }
@@ -42,10 +27,36 @@ body {
 	padding-left: 5px;
 }
 
-.loginForm input[type="submit"]{
+.select {
+	padding-top: 5px;
+}
+
+form .many {
+	width: 10%;
+	margin: 1% 3% 1% 0%;
+}
+
+form label {
+	display: block;
+	margin: 1% 1% 1% 10%;
+	color: #FFF;
+	font-size: 20px;
+}
+
+.loginForm input[type="submit"], form .small, .panel .backbutton{
 	width: 20%;
 	background: #F0F0F0;
 	padding-left: 0px;
+	float: left;
+	margin-top: 3%;
+}
+
+.wrapper .panel .backbutton {
+	margin-left: 0px;
+}
+
+form .datetime {
+	height: 20%;
 }
 
 input:required:valid{
@@ -58,14 +69,99 @@ input:required:invalid {
 
 }
 
-input:focus:invalid {
+input:focus:invalid, .loginForm input.invalid {
 	background: #fff url(/img/invalid.png) no-repeat 98% center;
+	border-color: #ff6666;
+	box-shadow: 0 0 5px #ff6666;	
 }
 
+.invalid {
+	padding: 5px;
+	color:#ff3734;
+	background: #ccc url(/img/invalid.png) no-repeat 98% center;
+}
 
+#TaskDueDateMonth {
+	margin-left: 10%;
+}
 
+.general-error {
+	margin-top: 20px;
+}
 
+/** 
+	Panels
+**/
+.panel {
+	-moz-border-radius:5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 
+	position: absolute;
+	width: 60%;
+	left: 50%;
+	top:20px;
+	margin-left: -30%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: #CCC;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7f7f7f), to(#cccccc));
+	background-image: -webkit-linear-gradient(#7f7f7f, #cccccc);
+	background-image: -moz-linear-gradient(#7f7f7f, #cccccc);
+	background-image: -o-linear-gradient(#7f7f7f, #cccccc);
+	background-image: linear-gradient(#7f7f7f, #cccccc);
+}
+
+.wrapper .panelLogin {
+	height: 200px;
+}
+
+.wrapper .panelTasks {
+
+}
+
+.panel .task{
+	width: 95%;
+	margin: auto;
+} 
+.panel .task {
+	clear: both;
+}
+.panel .task .row {
+	width: 25%;
+	float: left;
+}
+
+.panel .task .row {
+	text-align: center;
+	background: #CCC;
+	padding-top: 5px;
+	height: 25px;
+	margin: 0.5px 0px;
+}
+
+.panel .loading{
+	top:2px;
+	left:85%;
+	position: absolute;
+	width: 78px;
+	height: 16px;
+	background: url('/img/ajax-loader.gif') no-repeat right center;
+	/*padding-left: 20px;*/
+}
+
+.panel .task .link a {
+	font-family: inherit;
+	color:#000;
+	text-decoration: none;
+	margin-top:-10px;
+} 
+
+.panel .panelTitle {
+	font-size: 20px;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+}
 
 
 

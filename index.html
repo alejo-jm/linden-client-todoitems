@@ -1,24 +1,32 @@
 <!doctype html>
 <html>
 <head>
-	<title>Welcome to yours todo lists</title>
+	<title>Welcome to yours Tasks</title>
 	<link rel="stylesheet" type="text/css" href="/css/general.css">
 	<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
 	<script src="/js/jquery.js"></script>
 	<script src="/js/jquery.plugins.js"></script>
+	<script src="/js/app/app.js"></script>
 	<script src="/js/app/appController.js"></script>
 	<script src="/js/app/controllers/login.js"></script>
+	<script src="/js/app/controllers/tasks.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="panel">
-			<p class="text-center">Sign into TO-DO items</p>
-			<form class="loginForm" action="">
-				<input class="input" type="email" placeholder="Write your email" autofocus required>
-				<input class="input" type="password" placeholder="Write your password" required>
-				<br>
-				<input class="input" type="submit" value="Sign in">
-			</form>
+		<div class="panel panelLogin">
+			<div class="loading">Loading</div>
+			<p class="text-center panelTitle">Sign into tasks</p>
+			<div class="wpForm hide">
+				<form class="loginForm" accept-charset="utf-8" method="post" action="">
+					<input id="emailUser" name="data[User][email]" value="alejo.jm@gmail.com" class="input" type="email" placeholder="Write your email" autofocus required>
+					<input id="passwordUser" name="data[User][password]" value="1234" class="input" type="password" placeholder="Write your password" required>
+					<br>
+					<input class="input" type="submit" value="Sign in">
+				</form>
+				<p class="general-error invisible invalid text-center">Check your email and password</p>
+			</div>
+			<p class="text-center font-giant testLoading">Loading data from the server ...</p>
+			
 		</div>
 	</div>
 </body>

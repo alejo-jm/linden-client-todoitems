@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  
+  # redirect everything with the webservice to the back end server
+  RewriteCond %{REQUEST_URI} [a-z-\-]*/(service)/(.+)
+  RewriteRule (service)/(.+) http://tasks-server.local/$2 [P,QSA]	
+
+</IfModule>
