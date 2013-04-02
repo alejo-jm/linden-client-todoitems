@@ -140,6 +140,10 @@ input:focus:invalid, .loginForm input.invalid {
 	margin: 0.5px 0px;
 }
 
+.panel .task .due_date_end {
+	background: #ff6666;
+}
+
 .panel .loading{
 	top:2px;
 	left:85%;

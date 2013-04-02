@@ -1,8 +1,14 @@
 <IfModule mod_rewrite.c>
   RewriteEngine on
   
-  # redirect everything with the webservice to the back end server
+  # redirect everything with the webservice to the backend server
   RewriteCond %{REQUEST_URI} [a-z-\-]*/(service)/(.+)
+  
+  #development
   RewriteRule (service)/(.+) http://tasks-server.local/$2 [P,QSA]	
+  
+  #production
+  #RewriteRule (service)/(.+) http://servertasks.alejojm.net/$2 [P,QSA]
+  
 
 </IfModule>
